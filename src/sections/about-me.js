@@ -33,11 +33,7 @@ p{
 }
 
 `
-const paragraph=styled.p`
 
-
-
-`
 const Title=styled.div`
 font-family:${Styles.font.header};
 font-size:${Styles.size.l};

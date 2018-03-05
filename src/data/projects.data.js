@@ -15,30 +15,30 @@ const Projects=[
     },
     {
         name:"Jamal design catalogue",
-        description:"Where I am keeping all of my resusable code. It demonstrates various layouts and stylings",
+        description:"Where I am keeping all of my resusable code. It demonstrates various layouts and stylings.",
         url:"https://github.com/Noswad123/web-design-catalogue",
-        status:"In the process of refactoring to React JS, but You may view the angular version in Git hub",
+        status:"In the process of refactoring to React JS from, but You may view the angular version in Github.",
         imgUrl:"./img/jml.png"
     },
     {
         name:"Original Furnishings",
-        description:"An app I am building for a dear friend to show off his custom built furniture",
+        description:"An app I am building for a dear friend to show off his custom built furniture.",
         url:"http://original-furnishings.herokuapp.com/",
         status:"Coming Soon. Load times can be long on the Heroku site. Please be patient.",
         imgUrl:"./img/bench.png"
     },
     {
         name:"SWAG to College",
-        description:"SWAG to college is a non profit organization that helps low-income and first-generation students matriculate to college.  This website is being refactored from weebly to a react.",
+        description:"SWAG to college is a non profit organization that helps low-income and first-generation students matriculate to college.  This website is being refactored from Weebly to a React site.",
         url:"http://swag-to-college.herokuapp.com",
-        status:"Work in Progress. Load times can be long on the Heroku site. Please be patient.",
+        status:"This project is still a work in Progress, but you may view it on Heroku. Load times can be long on the Heroku site. Please be patient.",
         imgUrl:"./img/swag.png"
     },
     {
         name:"Task Bounty",
-        description:"An help that will help communities fix problems in their neighborhood.  It uses Angular and MongoDb",
-        url:"#",
-        status:"Work in Progress. Please view in git hub",
+        description:"An help that will help communities fix problems in their neighborhood.  It uses Angular and MongoDb.",
+        url:"https://github.com/Noswad123/taskbounty",
+        status:"This project is still a work in Progress, but you may view it on Github.",
         imgUrl:"./img/taskbounty.jpg"
     }
 ]

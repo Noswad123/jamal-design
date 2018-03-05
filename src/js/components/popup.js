@@ -4,20 +4,22 @@ import Styles from '../styles/styles';
 
 const Container=styled.div`
 display:flex;
-width:60%;
+width:70%;
 background-color:${Styles.color.primary};
 padding:20px;
 height:300px;
 position:fixed;
 top:25%;
-left:25%;
+left:15%;
 z-index:5;
 overflow-y:scroll;
+
 color:${Styles.color.font1};
 
 `
 const Picture=styled.img`
-width:50%;
+height:300px;
+max-width:400px;
 `
 const Name=styled.div`
 font-size:${Styles.size.m};`
@@ -73,7 +75,7 @@ export default class PopUp extends Component{
                     {this.props.status}
                 </Status>
                 <Availability>
-                   <a href={this.props.url}>View Now</a>
+                   <a href={this.props.url} target="_blank">View Now</a>
                 </Availability>
              
                 </TextWrap>

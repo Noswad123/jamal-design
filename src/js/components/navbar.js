@@ -15,7 +15,9 @@ width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+  a{
+    text-decoration:none;
+  }
     img {
       height: 40px;
   }
@@ -54,7 +56,7 @@ export default class Navbar extends Component {
   render() {
     return (
       <Container>
-        <Name>Jamal Dawson</Name>
+        <Link to="/"><Name>Jamal Dawson</Name></Link>
         <Links>
           <li>
             <Link  to="/aboutme">About</Link>

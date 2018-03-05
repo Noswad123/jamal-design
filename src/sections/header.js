@@ -24,8 +24,12 @@ button{
   color:${Styles.color.font1};
   font-family:${Styles.font.text};
   font-size:${Styles.size.s};
+  cursor:pointer;
 }
 align-items:center;
+a{
+  text-decoration:none;
+}
 `
 
 const Title=styled.div`
@@ -45,7 +49,7 @@ export default class Header extends Component {
         <Container>
             <Title>Full-Stack Web Developer</Title>
           <Blurb>A true problem solver at heart. I enjoy building apps that make life easier.</Blurb>
-          <button>About Me</button>
+          <Link to="/aboutme"><button>About Me</button></Link>
             </Container>
       )
     }

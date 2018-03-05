@@ -56,7 +56,7 @@ export default class Portfolio extends Component {
         super();
         this.state={
             selectedProject:0,
-            isPopUp:true
+            isPopUp:false
         }
     
         
