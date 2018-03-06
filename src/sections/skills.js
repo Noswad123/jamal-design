@@ -31,6 +31,11 @@ const Container=styled.div`
   @media (max-width:780px){
     display:block;
     text-align:center;
+    button{
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+    }
   }
   
 `

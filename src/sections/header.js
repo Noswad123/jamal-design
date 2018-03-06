@@ -36,11 +36,19 @@ const Title=styled.div`
 margin-bottom:${Styles.size.l};
 font-family:${Styles.font.title};
 font-size:${Styles.size.m};
-border-bottom:solid ${Styles.color.accent}`
+border-bottom:solid ${Styles.color.accent};
+@media (max-width:560px){
+  font-size:${Styles.size.s};
+  background-color:green;
+}`
 
 const Blurb=styled.div`
 margin-bottom:${Styles.size.l};
-font-family:${Styles.font.text};`
+font-family:${Styles.font.text};
+@media (max-width:560px){
+    width:80%;
+}
+`
 
 
 export default class Header extends Component {

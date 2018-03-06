@@ -10,7 +10,6 @@ z-index:100;
 width:100%;
     height: 10vh
     margin: 0;
-    position:fixed;
     padding: 8px;
     display: flex;
     justify-content: space-between;
