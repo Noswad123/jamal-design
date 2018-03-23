@@ -39,7 +39,6 @@ font-size:${Styles.size.m};
 border-bottom:solid ${Styles.color.accent};
 @media (max-width:560px){
   font-size:${Styles.size.s};
-  background-color:green;
 }`
 
 const Blurb=styled.div`

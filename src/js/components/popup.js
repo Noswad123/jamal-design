@@ -15,17 +15,27 @@ z-index:5;
 overflow-y:scroll;
 
 color:${Styles.color.font1};
-
+@media (max-width:975px){
+    width:90%;
+    left:0;
+}
 `
 const Picture=styled.img`
 height:300px;
 max-width:400px;
+cursor:pointer;
 `
 const Name=styled.div`
 font-size:${Styles.size.m};`
 
 const Description=styled.p``
-const Status=styled.div``
+const TechWrapper=styled.div`
+display:flex;
+flex-wrap:wrap;
+img{
+    height:50px;
+    margin:10px;
+}`
 const Availability=styled.div`
 a{
     color:${Styles.color.accent};
@@ -46,6 +56,7 @@ const TextWrap=styled.div`
 const Wrapper=styled.div`
     width:100%;
     display:flex;
+    margin-top:20px;
     justify-content:space-between;
     @media (max-width:975px){
         display:flex;
@@ -60,9 +71,10 @@ export default class PopUp extends Component{
     render(){
         return(
             <Container style={this.props.display}>
+            <X closePopUp={this.props.closePopUp} />
             <Wrapper>
-                <X closePopUp={this.props.closePopUp} />
-                <Picture src={this.props.img} alt={this.props.name}/>
+                
+            <a href={this.props.url} target="_blank"> <Picture src={this.props.img} alt={this.props.name}/></a>
                 <TextWrap>
                 <Name>
                     {this.props.name}
@@ -71,9 +83,9 @@ export default class PopUp extends Component{
                 <Description>
                     {this.props.description}
                 </Description>
-                <Status>
-                    {this.props.status}
-                </Status>
+                <h3>Technologies Used:</h3>
+                <Tech picList={this.props.tech}/>
+                     
                 <Availability>
                    <a href={this.props.url} target="_blank">View Now</a>
                 </Availability>
@@ -91,6 +103,18 @@ class X extends Component{
             <XContainer onClick={()=>this.props.closePopUp()}>
                 X
             </XContainer>
+        )
+    }
+}
+
+class Tech extends Component{
+    render(){
+        return(
+            <TechWrapper>
+                {
+                    this.props.picList.map((element, index)=><img src={element} key={index} alt={"image"+index}/>)
+                }
+                </TechWrapper>
         )
     }
 }

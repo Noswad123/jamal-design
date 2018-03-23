@@ -83,7 +83,7 @@ export default class Portfolio extends Component {
       return (
         <Container>
             <Title>Portfolio</Title>
-            <PopUP  closePopUp={this.closePopUp.bind(this)} display={this.changePopUp()} img={Projects[this.state.selectedProject].imgUrl}  name={Projects[this.state.selectedProject].name} description={Projects[this.state.selectedProject].description} url={Projects[this.state.selectedProject].url} status={Projects[this.state.selectedProject].status}/>
+            <PopUP  closePopUp={this.closePopUp.bind(this)} display={this.changePopUp()} img={Projects[this.state.selectedProject].imgUrl}  name={Projects[this.state.selectedProject].name} description={Projects[this.state.selectedProject].description} url={Projects[this.state.selectedProject].url} tech={Projects[this.state.selectedProject].tech}/>
 
             <Wrapper>
             {Projects.map(

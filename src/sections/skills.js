@@ -6,8 +6,7 @@ const Container=styled.div`
   display:flex;
   flex-direction:column;
   align-items:center;
-  justify-content:space-around;
-  height:100vh;
+  min-height:100vh;
   width:100%;
   padding:64px;
   font-family:${Styles.font.text};
@@ -27,6 +26,7 @@ const Container=styled.div`
   box-sizing:border-box;
   a{
     text-decoration:none;
+    margin-top:50px;
   }
   @media (max-width:780px){
     display:block;
@@ -45,12 +45,13 @@ font-size:${Styles.size.l};
 margin-bottom:${Styles.size.l};
 border-bottom:solid ${Styles.color.accent}`
 
-const SkillList1=styled.div`
+const SkillList=styled.div`
 display:flex;
 width:100%;
 flex-wrap:wrap;
 justify-content:space-between;
 box-sizing:border-box;
+
 ul{
   margin:5px;
   list-style-type:none;
@@ -59,28 +60,8 @@ ul{
 img{
   height:${Styles.size.xl};
 }
-@media (max-width:780px){
-  display:none;
-}
-`
-const SkillList2=styled.div`
-display:none;
-flex-direction:column;
-width:100%;
-flex-wrap:wrap;
-align-items:center;
-justify-content:space-around;
-box-sizing:border-box;
-ul{
-  margin:5px;
-  list-style-type:none;
-  padding:0;
-}
-img{
-  height:${Styles.size.xl};
-}
-@media (max-width:780px){
- display:flex;
+@media (max-width:940px){
+  display:inline-block;
 }
 `
 const List=styled.div`
@@ -94,95 +75,54 @@ export default class Skills extends Component {
     render() {
       return (
         <Container>
-              <Title>My Skills</Title>
-      <SkillList1>
-      <section>
-          <img src={"./img/react.png"} alt="react"/>
-          <Emphasize>Frontend</Emphasize>
+          <Title>My Skills</Title>
+          <SkillList>
+            <section>
+              
+              <List>
+                <ul>
+                <img src={"./img/react.png"} alt="react"/>
+              <Emphasize>Frontend</Emphasize>
+                  <li>HTML</li>
+                  <li>CSS/SASS</li>
+                  <li>Javascript</li>
+                  
+                </ul>
+              </List>
+            </section>
+            <section>
+              <List>
+                <ul>
+                  <img src={"./img/mongo.png"} alt="mongodb"/>
+                  <Emphasize>Database</Emphasize>
+                  <li>SQL</li>
+                  <li>NoSQL</li>
+                </ul>
+              </List>
+        </section>
+        <section>
           <List>
             <ul>
-          <li>HTML</li>
-          <li>CSS/SASS</li>
-          <li>Angular</li>
-          <li>React</li>
-          </ul>
+              <img src={"./img/angular.svg"} alt="angular"/>
+              <Emphasize>Frameworks</Emphasize>
+              <li>jQuery</li>
+              <li>Angular</li>
+              <li>React</li>
+            </ul>
           </List>
           </section>
         <section>
-        <List>
+        
+          <List>
             <ul>
-        <img src={"./img/mongo.png"} alt="mongodb"/>
-          <Emphasize>Database</Emphasize>
-          <li>SQL</li>
-          <li>NoSQL</li>
-          </ul>
-          </List>
-          </section>
-        <section>
-        <img src={"./img/angular.svg"} alt="angular"/>
-        <List>
-            <ul>
-          <Emphasize>Logic</Emphasize>
-          <li>Javascript</li>
-          <li>Python</li>
-          </ul>
-          </List>
-          </section>
-        <section>
-        <img src={"./img/js.png"} alt="js"/>
+            <img src={"./img/js.png"} alt="js"/>
           <Emphasize>Backend</Emphasize>
-          <List>
-            <ul>
           <li>Expressjs</li>
           <li>Nodejs</li>
           </ul>
           </List>
          </section>
-      </SkillList1>
-      <SkillList2>
-      <section>
-          <img src={"./img/react.png"} alt="react"/>
-          <Emphasize>Frontend</Emphasize>
-          <List>
-            <ul>
-          <li>HTML</li>
-          <li>CSS/SASS</li>
-          <li>Angular</li>
-          <li>React</li>
-          </ul>
-          </List>
-          </section>
-        <section>
-        <List>
-            <ul>
-        <img src={"./img/mongo.png"} alt="mongodb"/>
-          <Emphasize>Database</Emphasize>
-          <li>SQL</li>
-          <li>NoSQL</li>
-          </ul>
-          </List>
-          </section>
-        <section>
-        <img src={"./img/angular.svg"} alt="angular"/>
-        <List>
-            <ul>
-          <Emphasize>Logic</Emphasize>
-          <li>Javascript</li>
-          <li>Python</li>
-          </ul>
-          </List>
-          </section>
-        <section>
-        <img src={"./img/js.png"} alt="js"/>
-          <Emphasize>Backend</Emphasize>
-          <List>
-            <ul>
-          <li>Expressjs</li>
-          <li>Nodejs</li>
-          </ul>
-          </List>
-         </section>
-      </SkillList2>
+      </SkillList>
 
       <Link to="/portfolio"><button>Portfolio</button></Link>
     </Container>

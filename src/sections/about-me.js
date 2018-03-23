@@ -46,7 +46,7 @@ export default class AboutMe extends Component {
       return (
         <Container>
             <Title>About Me</Title>
-          <p>For six years, I taught high school mathematics. It was very rewarding to see my students mature. However, I felt unfufilled. I longed for to be more creative on a day to day basis. Through much soul-searching, I began journey as a web-developer. Even though there are many days, where I want to throw my computer across the room, I'm glad I switched to the programming field. I continue to support students through an organization I co-founded, SWAG to college. During my free time, I play basketball and disc golf. Life is good. I can't complain.</p>
+          <p>For six years, I taught high school mathematics. It was very rewarding to see my students mature. However, I felt unfufilled. I longed for to be more creative on a day to day basis. Through much soul-searching, I began journey as a web-developer. I enrolled in a coding bootcamp, where I graduated with competency as a full-stack web developer. I continue to support students through an organization I co-founded, SWAG to college. During my free time, I play basketball and disc golf. Life is good. I can't complain.</p>
 
           <Link to="/skills"><button >My Skills</button></Link>
         </Container>
