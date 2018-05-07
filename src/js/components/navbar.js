@@ -1,78 +1,151 @@
-import React, { Component } from 'react';
-import { Link} from 'react-router-dom';
-import styled from 'styled-components';
-import Styles from '../styles/styles'
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import Styles from "../styles/styles";
 
-const Container=styled.div`
+const Container = styled.div`
   background-color: ${Styles.color.primary};
-  color:${Styles.color.font1};
-  z-index:100;
-  width:100%;
-  height: 10vh
-  margin: 0;
-  padding: 8px;
+  color: ${Styles.color.font1};
+  width: 100%;
+  height: 80px;
   display: flex;
+  padding: 20px;
   justify-content: space-between;
   align-items: center;
-  a{
-    text-decoration:none;
+  box-sizing: border-box;
+  a {
+    text-decoration: none;
   }
+  @media (max-width: 675px) {
+    padding: 0 20px;
     img {
-      height: 40px;
+      display: flex;
+    }
   }
-`
-const Links=styled.ul`
+`;
+const Links = styled.ul`
   list-style: none;
-  li{
+  @media (max-width: 675px) {
+    display: none;
+  }
+  li {
     display: inline-block;
-    font-size:${Styles.size.s};
-    color:white;
-    margin-right:20px;
+    font-size: ${Styles.size.s};
+    color: white;
+    margin-right: 20px;
     padding: 8px;
-    border:solid ${Styles.color.primary};
-    &:hover{
-      border:solid ${Styles.color.secondary};
-      a{
-        color:${Styles.color.accent};
-        text-decoration:none;
-        
-      
+    border: solid ${Styles.color.primary};
+    &:hover {
+      border: solid ${Styles.color.secondary};
+      a {
+        color: ${Styles.color.accent};
+        text-decoration: none;
       }
     }
-    a{
-      color:${Styles.color.font1};
-      text-decoration:none;
-      font-family:${Styles.font.text};
+    a {
+      color: ${Styles.color.font1};
+      text-decoration: none;
+      font-family: ${Styles.font.text};
     }
   }
-`
-const Name=styled.div`
-font-family:${Styles.font.header};
-  color:${Styles.color.font1};
-  font-size:${Styles.size.m};
-`
+`;
+const Name = styled.div`
+  font-family: ${Styles.font.header};
+  color: ${Styles.color.font1};
+  font-size: ${Styles.size.m};
+  width: 200px;
+  display: inline-block;
+`;
+const Mobile = styled.div`
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  background-color: ${Styles.color.primary};
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  min-height: 300px;
+  border: solid black;
+  a {
+    font-family: ${Styles.font.text};
+    color: white;
+  }
+`;
+
+const Close = styled.div`
+  position absolute;
+  top:0;
+  right:20px;
+  cursor:pointer;
+
+`;
+
+const Hamburger = styled.img`
+  display: none;
+  height: 40px;
+`;
 export default class Navbar extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isMobile: false
+    };
+  }
+  toggleMobile(bool) {
+    this.setState({ isMobile: bool });
+  }
   render() {
     return (
       <Container>
-        <Link to="/"><Name>Jamal Dawson</Name></Link>
+        <Link to="/">
+          <Name>Jamal Dawson</Name>
+        </Link>
         <Links>
           <li>
-            <Link  to="/aboutme">About</Link>
+            <Link to="/aboutme">About</Link>
           </li>
           <li>
-            <Link  to="/skills"> Skills</Link>
+            <Link to="/skills"> Skills</Link>
           </li>
           <li>
-            <Link  to="/portfolio"> Portfolio</Link>
-            </li>
+            <Link to="/portfolio"> Portfolio</Link>
+          </li>
           <li>
             <Link to="/contactme">Contact</Link>
           </li>
-          
         </Links>
+
+        <Mobile style={{ display: `${this.state.isMobile ? "flex" : "none"}` }}>
+          <Close onClick={() => this.toggleMobile(false)}>X</Close>
+
+          <Link to="/aboutme" onClick={() => this.toggleMobile(false)}>
+            About
+          </Link>
+
+          <Link to="/skills" onClick={() => this.toggleMobile(false)}>
+            {" "}
+            Skills
+          </Link>
+
+          <Link to="/portfolio" onClick={() => this.toggleMobile(false)}>
+            {" "}
+            Portfolio
+          </Link>
+
+          <Link to="/contactme" onClick={() => this.toggleMobile(false)}>
+            Contact
+          </Link>
+        </Mobile>
+
+        <Hamburger
+          src="./img/hamburger.png"
+          onClick={() => this.toggleMobile(true)}
+        />
       </Container>
     );
   }
 }
-
