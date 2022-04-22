@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Styles from "../js/styles/styles";
+import {Styles} from '../styles'
 import { Link } from "react-router-dom";
+
 const Container = styled.div`
   display: flex;
   min-height: 100vh;
@@ -65,7 +66,7 @@ const Title = styled.div`
   border-bottom: solid ${Styles.color.accent};
 `;
 
-export default class AboutMe extends Component {
+export class AboutMe extends Component {
   render() {
     return (
       <Container>

@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Styles from "../js/styles/styles";
 import { Link } from "react-router-dom";
-const Container = styled.div`
+import { Styles } from "../styles";
+
+const MyContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,10 +71,11 @@ const Emphasize = styled.div`
   font-family: ${Styles.font.header};
   margin-bottom: 20px;
 `;
-export default class Skills extends Component {
+
+export class Skills extends Component {
   render() {
     return (
-      <Container>
+      <MyContainer>
         <Title>My Skills</Title>
         <SkillList>
           <section>
@@ -120,7 +122,7 @@ export default class Skills extends Component {
         <Link to="/portfolio">
           <button>Portfolio</button>
         </Link>
-      </Container>
+      </MyContainer>
     );
   }
 }

@@ -1,4 +1,4 @@
-const Projects = [
+export const Projects = [
   {
     name: "Breaking Chains",
     description:
@@ -11,10 +11,12 @@ const Projects = [
       "./img/mongo.png",
       "./img/express.png"
     ],
+    status: 'who knows',
     imgUrl: "./img/breakin_chains.png"
   },
   {
     name: "Cartoon Cars",
+    status: 'who knows',
     description:
       "First react app, so I'm having fun experimenting with its features.  In this app, You may view a gallery of fantasy cars.",
     url: "http://cartoon-car.herokuapp.com/",
@@ -28,6 +30,7 @@ const Projects = [
   },
   {
     name: "Jamal Web Catalogue",
+    status: 'who knows',
     description:
       "A library of my resusable code and commonly used components. It demonstrates various layouts and stylings.",
     url: "https://jamal-design-catalogue.herokuapp.com/",
@@ -41,6 +44,7 @@ const Projects = [
   },
   {
     name: "Original Furnishings",
+    status: 'who knows',
     description:
       "An app I am building for a dear friend to show off his custom built furniture.",
     url: "http://original-furnishings.herokuapp.com/",
@@ -54,6 +58,7 @@ const Projects = [
   },
   {
     name: "SWAG to College",
+    status: 'who knows',
     description:
       "Goal of this project is to migrate the existing site www.swagtocollege.org from weebly to a reactjs app.  At a click of a button, visitors to the site may change between English and Spanish",
     url: "http://swag-to-college.herokuapp.com",
@@ -66,4 +71,3 @@ const Projects = [
     imgUrl: "./img/swag.png"
   }
 ];
-export default Projects;

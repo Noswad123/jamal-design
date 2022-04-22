@@ -16,7 +16,6 @@ export default class Footer extends Component {
         return (
             <Container>
             Footer
-            
         </Container>
         );
     }

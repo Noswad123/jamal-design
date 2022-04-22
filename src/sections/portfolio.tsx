@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Styles from "../js/styles/styles";
 import Project from "./project";
-import Projects from "../data/projects.data";
-import PopUP from "../js/components/popup";
+import {Projects} from "../data/projects.data";
 import { Link } from "react-router-dom";
+import { Styles } from "../styles";
+import { PopUp } from '../components'
 
 const Container = styled.div`
   display: flex;
@@ -52,11 +52,15 @@ const Title = styled.div`
   font-size: ${Styles.size.l};
   border-bottom: solid ${Styles.color.accent};
 `;
+type props = {
+  selectedProject: number,
+  isPopUp: boolean
+}
 
-export default class Portfolio extends Component {
-  constructor() {
-    super();
-    this.state = {
+export class Portfolio extends Component<{}, props> {
+  constructor(props: props) {
+    super(props);
+    this.state ={
       selectedProject: 0,
       isPopUp: false
     };
@@ -68,8 +72,7 @@ export default class Portfolio extends Component {
       return { display: "none" };
     }
   }
-  openPopUp(id) {
-    console.log(id);
+  openPopUp(id: number) {
     this.setState({
       isPopUp: true,
       selectedProject: id
@@ -82,7 +85,7 @@ export default class Portfolio extends Component {
     return (
       <Container>
         <Title>Portfolio</Title>
-        <PopUP
+        <PopUp
           closePopUp={this.closePopUp.bind(this)}
           display={this.changePopUp()}
           img={Projects[this.state.selectedProject].imgUrl}
@@ -103,7 +106,7 @@ export default class Portfolio extends Component {
                 name={x.name}
                 description={x.description}
                 status={x.status}
-                url={x.myUrl}
+                url={x.url}
               />
             );
           })}

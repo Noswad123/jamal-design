@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import React, { Component } from "react";
-import Styles from "../styles/styles";
+import { Component } from "react";
+import {Styles} from "../styles";
 
 const Container = styled.div`
   display: flex;
@@ -77,7 +77,16 @@ const Wrapper = styled.div`
     align-items: center;
   }
 `;
-export default class PopUp extends Component {
+type props = {
+  display: any,
+  url: string,
+  img: string,
+  tech: string[],
+  description: string,
+  name: string
+  closePopUp: () => void
+}
+export class PopUp extends Component<props, {}> {
   render() {
     return (
       <Container style={this.props.display}>
@@ -106,13 +115,20 @@ export default class PopUp extends Component {
   }
 }
 
-class X extends Component {
+type xProps = {
+  closePopUp: () => void
+}
+
+class X extends Component<xProps, {}> {
   render() {
     return <XContainer onClick={() => this.props.closePopUp()}>X</XContainer>;
   }
 }
 
-class Tech extends Component {
+type TechProps = {
+  picList: string[]
+}
+class Tech extends Component<TechProps, {}> {
   render() {
     return (
       <TechWrapper>

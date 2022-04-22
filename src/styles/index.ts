@@ -1,4 +1,4 @@
-const Styles = {
+export const Styles = {
   font: {
     title: "'Krona One', sans-sefif",
     header: "'Oswald', sans-serif",
@@ -27,5 +27,3 @@ const Styles = {
     xxl: "256px"
   }
 };
-
-export default Styles;

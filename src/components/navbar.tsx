@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Styles from "../styles/styles";
+import {Styles} from "../styles";
 
 const Container = styled.div`
   background-color: ${Styles.color.primary};
@@ -88,15 +88,17 @@ const Hamburger = styled.img`
   display: none;
   height: 40px;
 `;
-export default class Navbar extends Component {
+
+type props = {isMobile: boolean}
+export class Navbar extends Component<{}, props> {
   constructor() {
-    super();
+    super({isMobile: false});
     this.state = {
       isMobile: false
     };
   }
-  toggleMobile(bool) {
-    this.setState({ isMobile: bool });
+  toggleMobile(isMobile: boolean) {
+    this.setState({ isMobile });
   }
   render() {
     return (

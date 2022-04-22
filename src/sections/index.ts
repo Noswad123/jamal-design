@@ -1,0 +1,6 @@
+export * from './header'
+export * from './portfolio'
+export * from './skills'
+export * from './project'
+export * from './contact'
+export * from './about-me'

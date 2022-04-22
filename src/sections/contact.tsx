@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Styles from "../js/styles/styles";
+import { Styles } from "../styles";
 
 const Container = styled.div`
   display: flex;
@@ -54,7 +54,7 @@ const Header = styled.div`
   font-size: ${Styles.size.l};
   border-bottom: solid ${Styles.color.accent};
 `;
-export default class ContactMe extends Component {
+export class ContactMe extends Component {
   render() {
     return (
       <Container>
