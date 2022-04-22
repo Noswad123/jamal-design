@@ -61,8 +61,6 @@ export class ContactMe extends Component {
         <Header>Let's Connect!</Header>
         <p>
           {" "}
-          Have a project you need assistance with? Let me know. I would be eager
-          to lend a hand.
         </p>
         <Wrapper>
           <div>

@@ -84,8 +84,8 @@ export class Portfolio extends Component<{}, props> {
   render() {
     return (
       <Container>
-        <Title>Portfolio</Title>
-        <PopUp
+        <Title>Under Construction...</Title>
+        {/* <PopUp
           closePopUp={this.closePopUp.bind(this)}
           display={this.changePopUp()}
           img={Projects[this.state.selectedProject].imgUrl}
@@ -110,7 +110,7 @@ export class Portfolio extends Component<{}, props> {
               />
             );
           })}
-        </Wrapper>
+        </Wrapper> */}
 
         <Link to="/contactme">
           <button>Contact Me</button>

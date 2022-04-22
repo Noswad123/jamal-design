@@ -55,7 +55,7 @@ const Blurb = styled.div`
   }
 `;
 
-export class Header extends Component {
+export class Home extends Component {
   render() {
     return (
       <Container>

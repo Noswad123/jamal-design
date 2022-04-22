@@ -84,8 +84,6 @@ export class Skills extends Component {
               <Emphasize>Frontend</Emphasize>
               <li>HTML</li>
               <li>CSS/SASS</li>
-              <li>jQuery</li>
-              <li>Angular</li>
               <li>React</li>
               <li>Bootstrap</li>
             </List>
@@ -94,8 +92,7 @@ export class Skills extends Component {
             <List>
               <img src={"./img/mongo.png"} alt="mongodb" />
               <Emphasize>Database</Emphasize>
-              <li>SQL</li>
-              <li>NoSQL</li>
+              <li>POSTGRESQL</li>
             </List>
           </section>
           <section>
@@ -104,16 +101,13 @@ export class Skills extends Component {
               <Emphasize>Languages</Emphasize>
               <li>Javascript</li>
               <li>Python</li>
-              <li>C#</li>
             </List>
           </section>
           <section>
             <List>
               <img src={"./img/js.png"} alt="js" />
               <Emphasize>Backend</Emphasize>
-              <li>Expressjs</li>
               <li>Nodejs</li>
-              <li>Asp.Net</li>
               <li>Flask</li>
             </List>
           </section>

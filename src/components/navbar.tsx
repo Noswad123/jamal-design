@@ -104,7 +104,7 @@ export class Navbar extends Component<{}, props> {
     return (
       <Container>
         <Link to="/">
-          <Name>Jamal Dawson</Name>
+          <Name>Jamal</Name>
         </Link>
         <Links>
           <li>
