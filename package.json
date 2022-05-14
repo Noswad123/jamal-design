@@ -1,6 +1,7 @@
 {
   "name": "jamal-design",
   "private": true,
+  "homepage": "http://jamal-design.com",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
