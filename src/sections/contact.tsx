@@ -69,10 +69,13 @@ export class ContactMe extends Component {
           </div>
 
           <div>
-            <img src={"./img/github.png"} alt="linkedin" />
+            <img src={"./img/github.png"} alt="github" />
             <a href="https://github.com/Noswad123">Github</a>
           </div>
-          <a href="https://www.instagram.com/noswadian/?utm_source=ig_embed&amp;utm_campaign=loading" target="_blank">Jamal Dawson</a>
+          <div>
+            <img src={"./img/instagram.png"} alt="instagram" />
+            <a href="https://www.instagram.com/noswadian/?utm_source=ig_embed&amp;utm_campaign=loading" target="_blank">Instagram</a>
+          </div>
         </Wrapper>
       </Container>
     );

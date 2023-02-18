@@ -1,10 +1,6 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import styled from "styled-components";
-import Project from "./project";
-import {Projects} from "../data/projects.data";
-import { Link } from "react-router-dom";
 import { Styles } from "../styles";
-import { PopUp } from '../components'
 
 const Container = styled.div`
   display: flex;
@@ -82,7 +78,7 @@ export class Tribute extends Component<{}, props> {
     return (
       <Container>
         <div>
-          If I have seen further than others, it is by standing upon the shoulders of giants
+          If I have seen further than others, it is by standing upon the shoulders of giants.
         </div>
         <div> Isaac Newton</div>
       </Container>

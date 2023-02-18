@@ -71,7 +71,7 @@ const Emphasize = styled.div`
   margin-bottom: 20px;
 `;
 
-export class Skills extends Component {
+export class Hobbies extends Component {
   render() {
     return (
       <MyContainer>

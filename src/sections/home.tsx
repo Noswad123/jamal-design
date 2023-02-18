@@ -61,8 +61,7 @@ export class Home extends Component {
       <Container>
         <Title>Jamal Design</Title>
         <Blurb>
-          A true problem solver at heart. I enjoy building apps that make life
-          easier.
+          A true problem solver at heart.
         </Blurb>
         <Link to="/aboutme">
           <button>About Me</button>
