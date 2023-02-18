@@ -71,7 +71,7 @@ export class AboutMe extends Component {
       <Container>
         <Title>About Me</Title>
         <p>
-          A professional button pusher by trade, but my interests are all over
+          A button pusher by trade, but my interests are all over
           the place.
         </p>
 
