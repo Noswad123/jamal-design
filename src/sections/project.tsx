@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Styles from "../js/styles/styles";
+import { Styles } from "../styles";
 
 const Container = styled.div`
   display: flex;
@@ -37,7 +37,16 @@ const Description = styled.div``;
 const Availability = styled.div``;
 const Status = styled.div``;
 
-export default class Project extends Component {
+type props = {
+  id: number;
+  img: string;
+  name: string;
+  status: string;
+  description: string;
+  url: string;
+  openPopUp: (index: number) => void;
+};
+export default class Project extends Component<props, {}> {
   render() {
     return (
       <Container onClick={() => this.props.openPopUp(this.props.id)}>

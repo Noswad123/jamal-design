@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Styles from "../js/styles/styles";
+import { Styles } from "../styles";
 import { Link } from "react-router-dom";
+import { Paths } from "../common";
+
 const Container = styled.div`
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   color: ${Styles.color.font1};
   padding: 100px 34px;
@@ -28,7 +29,6 @@ const Container = styled.div`
     }
   }
   p {
-    width: 60%;
     line-height: 1.5;
     font-size: 20px;
   }
@@ -65,24 +65,18 @@ const Title = styled.div`
   border-bottom: solid ${Styles.color.accent};
 `;
 
-export default class AboutMe extends Component {
+export class AboutMe extends Component {
   render() {
     return (
       <Container>
         <Title>About Me</Title>
         <p>
-          For six years, I taught high school mathematics. It was very rewarding
-          to see my students mature. However, I felt unfufilled. I longed for to
-          be more creative on a day to day basis. Through much soul-searching, I
-          began journey as a web-developer. I enrolled in a coding bootcamp,
-          where I graduated with competency as a full-stack web developer. I
-          continue to support students through an organization I co-founded,
-          SWAG to college. During my free time, I play basketball and disc golf.
-          Life is good. I can't complain.
+          A button pusher by trade, but my interests are all over
+          the place.
         </p>
 
-        <Link to="/skills">
-          <button>My Skills</button>
+        <Link to={Paths.hobbies}>
+          <button>My Hobbies</button>
         </Link>
       </Container>
     );

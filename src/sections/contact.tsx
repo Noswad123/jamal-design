@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Styles from "../js/styles/styles";
+import { Styles } from "../styles";
 
 const Container = styled.div`
   display: flex;
@@ -54,35 +54,30 @@ const Header = styled.div`
   font-size: ${Styles.size.l};
   border-bottom: solid ${Styles.color.accent};
 `;
-export default class ContactMe extends Component {
+export class ContactMe extends Component {
   render() {
     return (
       <Container>
         <Header>Let's Connect!</Header>
-        <p>
-          {" "}
-          Have a project you need assistance with? Let me know. I would be eager
-          to lend a hand.
-        </p>
+        <p> </p>
         <Wrapper>
-          <div>
-            <img src={"./img/phone.png"} alt="linkedin" />
-            (832)6074333
-          </div>
-
           <div>
             <img src={"./img/linkedin.png"} alt="linkedin" />
             <a href="https://www.linkedin.com/in/jamal-dawson/">LinkedIn</a>
           </div>
 
           <div>
-            <img src={"./img/github.png"} alt="linkedin" />
+            <img src={"./img/github.png"} alt="github" />
             <a href="https://github.com/Noswad123">Github</a>
           </div>
-
           <div>
-            <img src={"./img/email.png"} alt="linkedin" />
-            jamal.a.dawson@gmail.com
+            <img src={"./img/instagram.png"} alt="instagram" />
+            <a
+              href="https://www.instagram.com/noswadian/?utm_source=ig_embed&amp;utm_campaign=loading"
+              target="_blank"
+            >
+              Instagram
+            </a>
           </div>
         </Wrapper>
       </Container>

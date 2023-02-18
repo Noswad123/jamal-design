@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Styles from "../js/styles/styles";
 import { Link } from "react-router-dom";
-const Container = styled.div`
+import { Styles } from "../styles";
+
+const MyContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,8 +21,8 @@ const Container = styled.div`
     font-family: ${Styles.font.title};
     font-size: ${Styles.size.s};
     cursor: pointer;
-    margin-top:20px;
-    &:hover{
+    margin-top: 20px;
+    &:hover {
       background-color: ${Styles.color.primary};
     }
   }
@@ -35,7 +36,6 @@ const Container = styled.div`
     display: block;
     text-align: center;
   }
-}
 `;
 const Title = styled.div`
   font-family: ${Styles.font.header};
@@ -70,57 +70,19 @@ const Emphasize = styled.div`
   font-family: ${Styles.font.header};
   margin-bottom: 20px;
 `;
-export default class Skills extends Component {
+
+export class Hobbies extends Component {
   render() {
     return (
-      <Container>
-        <Title>My Skills</Title>
-        <SkillList>
-          <section>
-            <List>
-              <img src={"./img/react.png"} alt="react" />
-              <Emphasize>Frontend</Emphasize>
-              <li>HTML</li>
-              <li>CSS/SASS</li>
-              <li>jQuery</li>
-              <li>Angular</li>
-              <li>React</li>
-              <li>Bootstrap</li>
-            </List>
-          </section>
-          <section>
-            <List>
-              <img src={"./img/mongo.png"} alt="mongodb" />
-              <Emphasize>Database</Emphasize>
-              <li>SQL</li>
-              <li>NoSQL</li>
-            </List>
-          </section>
-          <section>
-            <List>
-              <img src={"./img/python.jpg"} alt="angular" />
-              <Emphasize>Languages</Emphasize>
-              <li>Javascript</li>
-              <li>Python</li>
-              <li>C#</li>
-            </List>
-          </section>
-          <section>
-            <List>
-              <img src={"./img/js.png"} alt="js" />
-              <Emphasize>Backend</Emphasize>
-              <li>Expressjs</li>
-              <li>Nodejs</li>
-              <li>Asp.Net</li>
-              <li>Flask</li>
-            </List>
-          </section>
-        </SkillList>
-
-        <Link to="/portfolio">
-          <button>Portfolio</button>
-        </Link>
-      </Container>
+      <MyContainer>
+        <Title>My Hobbies</Title>
+        <div>Tech</div>
+        <div>Aviation</div>
+        <div>Disc Golf</div>
+        <div>Music</div>
+        <div>Basketball</div>
+        <div>Food & Drink</div>
+      </MyContainer>
     );
   }
 }

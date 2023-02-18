@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Styles from "../styles/styles";
+import { Paths } from "../common";
+import { Styles } from "../styles";
 
 const Container = styled.div`
   background-color: ${Styles.color.primary};
@@ -77,45 +78,46 @@ const Mobile = styled.div`
 `;
 
 const Close = styled.div`
-  position absolute;
-  top:0;
-  right:20px;
-  cursor:pointer;
-
+  position: absolute;
+  top: 0;
+  right: 20px;
+  cursor: pointer;
 `;
 
 const Hamburger = styled.img`
   display: none;
   height: 40px;
 `;
-export default class Navbar extends Component {
+
+type props = { isMobile: boolean };
+export class Navbar extends Component<{}, props> {
   constructor() {
-    super();
+    super({ isMobile: false });
     this.state = {
-      isMobile: false
+      isMobile: false,
     };
   }
-  toggleMobile(bool) {
-    this.setState({ isMobile: bool });
+  toggleMobile(isMobile: boolean) {
+    this.setState({ isMobile });
   }
   render() {
     return (
       <Container>
-        <Link to="/">
-          <Name>Jamal Dawson</Name>
+        <Link to={Paths.home}>
+          <Name>Jamal</Name>
         </Link>
         <Links>
           <li>
-            <Link to="/aboutme">About</Link>
+            <Link to={Paths.aboutMe}>About</Link>
           </li>
           <li>
-            <Link to="/skills"> Skills</Link>
+            <Link to={Paths.hobbies}>Hobbies</Link>
           </li>
           <li>
-            <Link to="/portfolio"> Portfolio</Link>
+            <Link to={Paths.tribute}>Tribute</Link>
           </li>
           <li>
-            <Link to="/contactme">Contact</Link>
+            <Link to={Paths.contactMe}>Contact</Link>
           </li>
         </Links>
 

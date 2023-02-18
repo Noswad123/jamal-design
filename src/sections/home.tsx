@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Styles from "../js/styles/styles";
 import { Link } from "react-router-dom";
+import { Styles } from "../styles";
 
 const Container = styled.div`
   display: flex;
@@ -55,15 +55,12 @@ const Blurb = styled.div`
   }
 `;
 
-export default class Header extends Component {
+export class Home extends Component {
   render() {
     return (
       <Container>
-        <Title>Full-Stack Web Developer</Title>
-        <Blurb>
-          A true problem solver at heart. I enjoy building apps that make life
-          easier.
-        </Blurb>
+        <Title>Jamal Design</Title>
+        <Blurb>A true problem solver at heart.</Blurb>
         <Link to="/aboutme">
           <button>About Me</button>
         </Link>
