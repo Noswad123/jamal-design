@@ -10,7 +10,7 @@ export const Styles = {
   orange: "#EE4B28",
 
   color: {
-    primary: "#1446A0",
+    primary: "#2d649b",
     secondary: "#FFFBFC",
     accent: "#4ECDC4",
     tertiary: "#212529",

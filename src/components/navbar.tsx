@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Paths } from "../common";
 import {Styles} from "../styles";
 
 const Container = styled.div`
@@ -77,11 +78,10 @@ const Mobile = styled.div`
 `;
 
 const Close = styled.div`
-  position absolute;
+  position: absolute;
   top:0;
   right:20px;
   cursor:pointer;
-
 `;
 
 const Hamburger = styled.img`
@@ -103,21 +103,21 @@ export class Navbar extends Component<{}, props> {
   render() {
     return (
       <Container>
-        <Link to="/">
+        <Link to={Paths.home}>
           <Name>Jamal</Name>
         </Link>
         <Links>
           <li>
-            <Link to="/aboutme">About</Link>
+            <Link to={Paths.aboutMe}>About</Link>
           </li>
           <li>
-            <Link to="/skills"> Skills</Link>
+            <Link to={Paths.hobbies}>Hobbies</Link>
           </li>
           <li>
-            <Link to="/portfolio"> Portfolio</Link>
+            <Link to={Paths.tribute}>Tribute</Link>
           </li>
           <li>
-            <Link to="/contactme">Contact</Link>
+            <Link to={Paths.contactMe}>Contact</Link>
           </li>
         </Links>
 

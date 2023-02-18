@@ -64,11 +64,6 @@ export class ContactMe extends Component {
         </p>
         <Wrapper>
           <div>
-            <img src={"./img/phone.png"} alt="linkedin" />
-            (832)6074333
-          </div>
-
-          <div>
             <img src={"./img/linkedin.png"} alt="linkedin" />
             <a href="https://www.linkedin.com/in/jamal-dawson/">LinkedIn</a>
           </div>
@@ -77,11 +72,7 @@ export class ContactMe extends Component {
             <img src={"./img/github.png"} alt="linkedin" />
             <a href="https://github.com/Noswad123">Github</a>
           </div>
-
-          <div>
-            <img src={"./img/email.png"} alt="linkedin" />
-            jamal.a.dawson@gmail.com
-          </div>
+          <a href="https://www.instagram.com/noswadian/?utm_source=ig_embed&amp;utm_campaign=loading" target="_blank">Jamal Dawson</a>
         </Wrapper>
       </Container>
     );

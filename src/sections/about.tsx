@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import {Styles} from '../styles'
 import { Link } from "react-router-dom";
+import { Paths } from "../common";
 
 const Container = styled.div`
   display: flex;
@@ -73,8 +74,8 @@ export class AboutMe extends Component {
           A professional button pusher by trade, but my interests are all over the place.
         </p>
 
-        <Link to="/skills">
-          <button>My Skills</button>
+        <Link to={Paths.hobbies}>
+          <button>My Hobbies</button>
         </Link>
       </Container>
     );

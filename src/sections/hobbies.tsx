@@ -36,7 +36,6 @@ const MyContainer = styled.div`
     display: block;
     text-align: center;
   }
-}
 `;
 const Title = styled.div`
   font-family: ${Styles.font.header};
@@ -76,46 +75,13 @@ export class Skills extends Component {
   render() {
     return (
       <MyContainer>
-        <Title>My Skills</Title>
-        <SkillList>
-          <section>
-            <List>
-              <img src={"./img/react.png"} alt="react" />
-              <Emphasize>Frontend</Emphasize>
-              <li>HTML</li>
-              <li>CSS/SASS</li>
-              <li>React</li>
-              <li>Bootstrap</li>
-            </List>
-          </section>
-          <section>
-            <List>
-              <img src={"./img/mongo.png"} alt="mongodb" />
-              <Emphasize>Database</Emphasize>
-              <li>POSTGRESQL</li>
-            </List>
-          </section>
-          <section>
-            <List>
-              <img src={"./img/python.jpg"} alt="angular" />
-              <Emphasize>Languages</Emphasize>
-              <li>Javascript</li>
-              <li>Python</li>
-            </List>
-          </section>
-          <section>
-            <List>
-              <img src={"./img/js.png"} alt="js" />
-              <Emphasize>Backend</Emphasize>
-              <li>Nodejs</li>
-              <li>Flask</li>
-            </List>
-          </section>
-        </SkillList>
-
-        <Link to="/portfolio">
-          <button>Portfolio</button>
-        </Link>
+        <Title>My Hobbies</Title>
+       <div>Tech</div>
+       <div>Aviation</div>
+       <div>Disc Golf</div>
+       <div>Music</div>
+       <div>Basketball</div>
+       <div>Food & Drink</div>
       </MyContainer>
     );
   }

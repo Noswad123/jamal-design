@@ -42,9 +42,6 @@ const Wrapper = styled.div`
     padding:50px;
     box-sizing:border-box;
     position:relative;
-    
-    }
-}
 `;
 const Title = styled.div`
   margin-top: 20px;
@@ -57,7 +54,7 @@ type props = {
   isPopUp: boolean
 }
 
-export class Portfolio extends Component<{}, props> {
+export class Tribute extends Component<{}, props> {
   constructor(props: props) {
     super(props);
     this.state ={
@@ -84,37 +81,10 @@ export class Portfolio extends Component<{}, props> {
   render() {
     return (
       <Container>
-        <Title>Under Construction...</Title>
-        {/* <PopUp
-          closePopUp={this.closePopUp.bind(this)}
-          display={this.changePopUp()}
-          img={Projects[this.state.selectedProject].imgUrl}
-          name={Projects[this.state.selectedProject].name}
-          description={Projects[this.state.selectedProject].description}
-          url={Projects[this.state.selectedProject].url}
-          tech={Projects[this.state.selectedProject].tech}
-        />
-
-        <Wrapper>
-          {Projects.map((x, index) => {
-            return (
-              <Project
-                key={index}
-                id={index}
-                img={x.imgUrl}
-                openPopUp={this.openPopUp.bind(this)}
-                name={x.name}
-                description={x.description}
-                status={x.status}
-                url={x.url}
-              />
-            );
-          })}
-        </Wrapper> */}
-
-        <Link to="/contactme">
-          <button>Contact Me</button>
-        </Link>
+        <div>
+          If I have seen further than others, it is by standing upon the shoulders of giants
+        </div>
+        <div> Isaac Newton</div>
       </Container>
     );
   }

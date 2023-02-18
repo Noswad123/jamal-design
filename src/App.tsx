@@ -4,19 +4,14 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import './index.css'
 import {Navbar} from './components/navbar';
 import styled from 'styled-components';
-import { AboutMe, ContactMe, Home, Portfolio, Skills } from './sections';
+import { AboutMe, ContactMe, Home, Tribute, Skills } from './sections';
+import { Paths } from './common';
 
 const Container = styled.div`
 margin: 0;
 `;
 
-export const Paths = {
-  home: '/',
-  aboutMe: '/aboutme',
-  contactMe: '/contactMe',
-  portfolio: '/portfolio',
-  skills: '/skills'
-}
+
 
 
 ReactDOM.render(
@@ -26,7 +21,7 @@ ReactDOM.render(
     <Routes>
       <Route path='/' element={<Home/>}></Route>
       <Route path={Paths.aboutMe} element={<AboutMe/>}></Route>
-      <Route path={Paths.portfolio} element={<Portfolio/>}></Route>
+      <Route path={Paths.tribute} element={<Tribute/>}></Route>
       <Route path={Paths.skills} element={<Skills/>}></Route>
       <Route path={Paths.contactMe} element={<ContactMe/>}></Route>
     </Routes>
