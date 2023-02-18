@@ -3,7 +3,7 @@ export const Styles = {
     title: "'Krona One', sans-sefif",
     header: "'Oswald', sans-serif",
     menu: "Yeon Sung, cursive",
-    text: "Inconsolata,monospace"
+    text: "Inconsolata,monospace",
   },
   grey: "#212529",
   mystery: "#33A27F",
@@ -15,7 +15,7 @@ export const Styles = {
     accent: "#4ECDC4",
     tertiary: "#212529",
     font1: "#FFFBFC",
-    font2: "#CFDBD5"
+    font2: "#CFDBD5",
   },
   size: {
     xxs: "4px",
@@ -24,6 +24,6 @@ export const Styles = {
     m: "32px",
     l: "64px",
     xl: "128px",
-    xxl: "256px"
-  }
+    xxl: "256px",
+  },
 };

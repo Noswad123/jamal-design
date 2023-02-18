@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import {Styles} from '../styles'
+import { Styles } from "../styles";
 import { Link } from "react-router-dom";
 import { Paths } from "../common";
 
@@ -71,7 +71,8 @@ export class AboutMe extends Component {
       <Container>
         <Title>About Me</Title>
         <p>
-          A professional button pusher by trade, but my interests are all over the place.
+          A professional button pusher by trade, but my interests are all over
+          the place.
         </p>
 
         <Link to={Paths.hobbies}>

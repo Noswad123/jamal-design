@@ -9,14 +9,14 @@ export const Projects = [
       "./img/sass.png",
       "./img/angular.svg",
       "./img/mongo.png",
-      "./img/express.png"
+      "./img/express.png",
     ],
-    status: 'who knows',
-    imgUrl: "./img/breakin_chains.png"
+    status: "who knows",
+    imgUrl: "./img/breakin_chains.png",
   },
   {
     name: "Cartoon Cars",
-    status: 'who knows',
+    status: "who knows",
     description:
       "First react app, so I'm having fun experimenting with its features.  In this app, You may view a gallery of fantasy cars.",
     url: "http://cartoon-car.herokuapp.com/",
@@ -24,13 +24,13 @@ export const Projects = [
       "./img/html.png",
       "./img/css.png",
       "./img/react.png",
-      "./img/heroku.svg"
+      "./img/heroku.svg",
     ],
-    imgUrl: "./img/speedracer.jpg"
+    imgUrl: "./img/speedracer.jpg",
   },
   {
     name: "Jamal Web Catalogue",
-    status: 'who knows',
+    status: "who knows",
     description:
       "A library of my resusable code and commonly used components. It demonstrates various layouts and stylings.",
     url: "https://jamal-design-catalogue.herokuapp.com/",
@@ -38,13 +38,13 @@ export const Projects = [
       "./img/html.png",
       "./img/css.png",
       "./img/react.png",
-      "./img/heroku.svg"
+      "./img/heroku.svg",
     ],
-    imgUrl: "./img/jml.png"
+    imgUrl: "./img/jml.png",
   },
   {
     name: "Original Furnishings",
-    status: 'who knows',
+    status: "who knows",
     description:
       "An app I am building for a dear friend to show off his custom built furniture.",
     url: "http://original-furnishings.herokuapp.com/",
@@ -52,13 +52,13 @@ export const Projects = [
       "./img/html.png",
       "./img/css.png",
       "./img/react.png",
-      "./img/heroku.svg"
+      "./img/heroku.svg",
     ],
-    imgUrl: "./img/bench.png"
+    imgUrl: "./img/bench.png",
   },
   {
     name: "SWAG to College",
-    status: 'who knows',
+    status: "who knows",
     description:
       "Goal of this project is to migrate the existing site www.swagtocollege.org from weebly to a reactjs app.  At a click of a button, visitors to the site may change between English and Spanish",
     url: "http://swag-to-college.herokuapp.com",
@@ -66,8 +66,8 @@ export const Projects = [
       "./img/html.png",
       "./img/css.png",
       "./img/react.png",
-      "./img/heroku.svg"
+      "./img/heroku.svg",
     ],
-    imgUrl: "./img/swag.png"
-  }
+    imgUrl: "./img/swag.png",
+  },
 ];

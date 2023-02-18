@@ -38,14 +38,14 @@ const Availability = styled.div``;
 const Status = styled.div``;
 
 type props = {
-  id: number,
-  img: string,
-  name: string,
-  status: string,
-  description: string,
-  url: string,
-  openPopUp: (index: number) => void
-}
+  id: number;
+  img: string;
+  name: string;
+  status: string;
+  description: string;
+  url: string;
+  openPopUp: (index: number) => void;
+};
 export default class Project extends Component<props, {}> {
   render() {
     return (

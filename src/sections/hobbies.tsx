@@ -21,8 +21,8 @@ const MyContainer = styled.div`
     font-family: ${Styles.font.title};
     font-size: ${Styles.size.s};
     cursor: pointer;
-    margin-top:20px;
-    &:hover{
+    margin-top: 20px;
+    &:hover {
       background-color: ${Styles.color.primary};
     }
   }
@@ -76,12 +76,12 @@ export class Hobbies extends Component {
     return (
       <MyContainer>
         <Title>My Hobbies</Title>
-       <div>Tech</div>
-       <div>Aviation</div>
-       <div>Disc Golf</div>
-       <div>Music</div>
-       <div>Basketball</div>
-       <div>Food & Drink</div>
+        <div>Tech</div>
+        <div>Aviation</div>
+        <div>Disc Golf</div>
+        <div>Music</div>
+        <div>Basketball</div>
+        <div>Food & Drink</div>
       </MyContainer>
     );
   }

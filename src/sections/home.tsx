@@ -60,9 +60,7 @@ export class Home extends Component {
     return (
       <Container>
         <Title>Jamal Design</Title>
-        <Blurb>
-          A true problem solver at heart.
-        </Blurb>
+        <Blurb>A true problem solver at heart.</Blurb>
         <Link to="/aboutme">
           <button>About Me</button>
         </Link>

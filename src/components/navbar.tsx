@@ -2,7 +2,7 @@ import { Component } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Paths } from "../common";
-import {Styles} from "../styles";
+import { Styles } from "../styles";
 
 const Container = styled.div`
   background-color: ${Styles.color.primary};
@@ -79,9 +79,9 @@ const Mobile = styled.div`
 
 const Close = styled.div`
   position: absolute;
-  top:0;
-  right:20px;
-  cursor:pointer;
+  top: 0;
+  right: 20px;
+  cursor: pointer;
 `;
 
 const Hamburger = styled.img`
@@ -89,12 +89,12 @@ const Hamburger = styled.img`
   height: 40px;
 `;
 
-type props = {isMobile: boolean}
+type props = { isMobile: boolean };
 export class Navbar extends Component<{}, props> {
   constructor() {
-    super({isMobile: false});
+    super({ isMobile: false });
     this.state = {
-      isMobile: false
+      isMobile: false,
     };
   }
   toggleMobile(isMobile: boolean) {

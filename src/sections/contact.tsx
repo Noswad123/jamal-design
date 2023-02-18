@@ -59,9 +59,7 @@ export class ContactMe extends Component {
     return (
       <Container>
         <Header>Let's Connect!</Header>
-        <p>
-          {" "}
-        </p>
+        <p> </p>
         <Wrapper>
           <div>
             <img src={"./img/linkedin.png"} alt="linkedin" />
@@ -74,7 +72,12 @@ export class ContactMe extends Component {
           </div>
           <div>
             <img src={"./img/instagram.png"} alt="instagram" />
-            <a href="https://www.instagram.com/noswadian/?utm_source=ig_embed&amp;utm_campaign=loading" target="_blank">Instagram</a>
+            <a
+              href="https://www.instagram.com/noswadian/?utm_source=ig_embed&amp;utm_campaign=loading"
+              target="_blank"
+            >
+              Instagram
+            </a>
           </div>
         </Wrapper>
       </Container>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Component } from "react";
-import {Styles} from "../styles";
+import { Styles } from "../styles";
 
 const Container = styled.div`
   display: flex;
@@ -78,14 +78,14 @@ const Wrapper = styled.div`
   }
 `;
 type props = {
-  display: any,
-  url: string,
-  img: string,
-  tech: string[],
-  description: string,
-  name: string
-  closePopUp: () => void
-}
+  display: any;
+  url: string;
+  img: string;
+  tech: string[];
+  description: string;
+  name: string;
+  closePopUp: () => void;
+};
 export class PopUp extends Component<props, {}> {
   render() {
     return (
@@ -116,8 +116,8 @@ export class PopUp extends Component<props, {}> {
 }
 
 type xProps = {
-  closePopUp: () => void
-}
+  closePopUp: () => void;
+};
 
 class X extends Component<xProps, {}> {
   render() {
@@ -126,8 +126,8 @@ class X extends Component<xProps, {}> {
 }
 
 type TechProps = {
-  picList: string[]
-}
+  picList: string[];
+};
 class Tech extends Component<TechProps, {}> {
   render() {
     return (

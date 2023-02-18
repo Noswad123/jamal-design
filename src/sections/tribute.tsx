@@ -30,14 +30,14 @@ const Container = styled.div`
   }
 `;
 const Wrapper = styled.div`
-    display:flex;
-    flex-wrap:wrap;
-    width: 100%;
-    justify-content:space-between;
-    align-items:center;
-    padding:50px;
-    box-sizing:border-box;
-    position:relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  box-sizing: border-box;
+  position: relative;
 `;
 const Title = styled.div`
   margin-top: 20px;
@@ -46,16 +46,16 @@ const Title = styled.div`
   border-bottom: solid ${Styles.color.accent};
 `;
 type props = {
-  selectedProject: number,
-  isPopUp: boolean
-}
+  selectedProject: number;
+  isPopUp: boolean;
+};
 
 export class Tribute extends Component<{}, props> {
   constructor(props: props) {
     super(props);
-    this.state ={
+    this.state = {
       selectedProject: 0,
-      isPopUp: false
+      isPopUp: false,
     };
   }
   changePopUp() {
@@ -68,7 +68,7 @@ export class Tribute extends Component<{}, props> {
   openPopUp(id: number) {
     this.setState({
       isPopUp: true,
-      selectedProject: id
+      selectedProject: id,
     });
   }
   closePopUp() {
@@ -78,7 +78,8 @@ export class Tribute extends Component<{}, props> {
     return (
       <Container>
         <div>
-          If I have seen further than others, it is by standing upon the shoulders of giants.
+          If I have seen further than others, it is by standing upon the
+          shoulders of giants.
         </div>
         <div> Isaac Newton</div>
       </Container>

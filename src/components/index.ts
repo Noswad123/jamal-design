@@ -1,3 +1,3 @@
-export * from './footer'
-export * from './navbar'
-export * from './popup'
+export * from "./footer";
+export * from "./navbar";
+export * from "./popup";
