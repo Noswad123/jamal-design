@@ -59,7 +59,7 @@ export class Home extends Component {
   render() {
     return (
       <Container>
-        <Title>Jamal Design</Title>
+        <Title>Jamal Dawson</Title>
         <Blurb>A true problem solver at heart.</Blurb>
         <Link to="/aboutme">
           <button>About Me</button>

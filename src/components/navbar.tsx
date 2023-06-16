@@ -50,12 +50,12 @@ const Links = styled.ul`
     }
   }
 `;
-const Name = styled.div`
-  font-family: ${Styles.font.header};
-  color: ${Styles.color.font1};
-  font-size: ${Styles.size.m};
-  width: 200px;
+const Logo = styled.div`
+  height: 75px;
   display: inline-block;
+  img{
+    height: 75px;
+  }
 `;
 const Mobile = styled.div`
   display: none;
@@ -104,7 +104,9 @@ export class Navbar extends Component<{}, props> {
     return (
       <Container>
         <Link to={Paths.home}>
-          <Name>Jamal</Name>
+          <Logo>
+            <img src={"./img/logo.svg"} alt="logo" />
+          </Logo>
         </Link>
         <Links>
           <li>

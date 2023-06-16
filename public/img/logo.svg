@@ -9,7 +9,7 @@
    id="svg5"
    xml:space="preserve"
    inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
-   sodipodi:docname="jamal-logo.svg"
+   sodipodi:docname="jamal-logo-white.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"><path
-       style="fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.0883096;stroke-opacity:1"
+       style="fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.0883096;stroke-opacity:1;fill:#ffffff"
        d="m 4.529,43.271666 h 7.922312 c 5.471065,-0.304209 6.413158,-0.959359 6.63143,-3.668911 V 7.2882981 h 3.90084 L 38.408294,29.064946 c 0.984909,1.364031 0.910768,1.256067 1.924307,2.77e-4 L 55.750649,7.2882981 h 3.900834 V 38.776874 c 0.07367,3.294621 2.426835,4.586547 6.63143,4.494792 H 73.766 l 3,2.855824 H 63.673109 C 57.616225,46.02784 56.089156,44.657959 55.750641,41.337102 L 56.032665,16.14135 c -0.0102,-0.994497 -0.97438,0.15829 -1.61912,1.073646 l -14.463769,18.59207 c -0.544398,0.617886 -0.485588,0.640379 -1.140058,0.03741 L 25.092391,17.303979 C 23.572765,15.074553 22.964842,14.471881 22.983582,16.14135 v 24.287285 c -0.185267,4.03613 -1.612711,5.633963 -6.915921,5.698855 H 1.4544523 Z"
        id="path8815"
        sodipodi:nodetypes="ccccccccccccccccccccccccc" /></g><metadata
